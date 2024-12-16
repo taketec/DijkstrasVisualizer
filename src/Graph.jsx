@@ -180,7 +180,7 @@ const Graph = () => {
         end,
         (currentNode) => {
           // Highlight nodes being visited
-          nodeGraphicsRef.current[currentNode.id].beginFill(0x39FF14); // Green for visited nodes
+          //nodeGraphicsRef.current[currentNode.id].beginFill(0x00ff00); // Green for visited nodes
           nodeGraphicsRef.current[currentNode.id].drawCircle(0, 0, 5);
           nodeGraphicsRef.current[currentNode.id].endFill();
         }
@@ -232,7 +232,6 @@ const Graph = () => {
   return (
     <div ref={pixiContainer} style={{ width: "100%", height: "100%" }}>
       <div style={{ position: "absolute", zIndex: 10, color: "black" }}>
-        <p>Select two nodes to find the shortest path.</p>
       </div>
     </div>
   );
